@@ -1,0 +1,43 @@
+penUp();
+function drawBasketballCourt() {
+  penRGB(210, 180, 140);
+  penWidth(400);
+  penUp();
+  moveTo(0, 240);
+  penDown();
+  moveTo(320, 240);
+  penUp();
+  penRGB(0, 0, 0);
+  moveTo(30, 100);
+  penDown();
+  penWidth(3);
+  moveTo(290, 100);
+  moveTo(290, 390);
+  moveTo(30, 390);
+  moveTo(30, 100);
+  penUp();
+  moveTo(30, 245);
+  penDown();
+  moveTo(290, 245);
+  penUp();
+  moveTo(130, 100);
+  penDown();
+  moveTo(130, 180);
+  moveTo(190, 180);
+  moveTo(190, 100);
+  penUp();
+  moveTo(130, 390);
+  penDown();
+  moveTo(130, 305);
+  moveTo(190, 305);
+  moveTo(190, 390);
+}
+function drawBasketball() {
+  penRGB(255, 165, 0);
+  penUp();
+  moveTo(randomNumber(50, 250), randomNumber(110, 370));
+  penDown();
+  dot(10);
+}
+drawBasketballCourt();
+drawBasketball();
